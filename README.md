@@ -3,7 +3,7 @@
 > 面向 PT 玩家的开源移动端管理工具 —— 插件化架构，一套代码覆盖 Android / iOS / 鸿蒙。
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Flutter](https://img.shields.io/badge/Flutter-3.10+-00B4A0?logo=flutter)](https://flutter.dev)
+[![Flutter](https://img.shields.io/badge/Flutter-3.27+-00B4A0?logo=flutter)](https://flutter.dev)
 [![HarmonyOS](https://img.shields.io/badge/鸿蒙-支持-red?logo=huawei)](docs/harmonyos-build-guide.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#贡献)
 
