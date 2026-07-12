@@ -29,8 +29,8 @@
 
 ### 环境要求
 
-- Flutter SDK >= 3.10.0
-- Dart SDK >= 3.0.0
+- Flutter SDK >= 3.27.0
+- Dart SDK >= 3.6.0
 
 ### 运行
 

@@ -1,10 +1,8 @@
 # PterPilot — PT 玩家移动端 App
 
-> 基于 Flutter 跨平台框架的 PT 资源一站式管理工具，覆盖 Android / iOS。
+> 基于 Flutter 跨平台框架的 PT 资源一站式管理工具，覆盖 Android / iOS / 鸿蒙。
 
 ## 项目架构
-
-遵循 **PterPilot 移动端架构方案**（详见 `../PterPilot移动端架构方案.md`）：
 
 ```
 ┌──────────────────────────────────────────┐
@@ -23,9 +21,9 @@
 
 | 层级 | 技术 | 说明 |
 |------|------|------|
-| 框架 | Flutter 3.x | 跨平台（Android / iOS） |
-| 状态管理 | flutter_riverpod ^2.4.0 | 编译时安全，适合复杂状态 |
-| 网络 | dio ^5.4.0 | HTTP 客户端 |
+| 框架 | Flutter 3.27+ | 跨平台（Android / iOS / 鸿蒙） |
+| 状态管理 | flutter_riverpod ^2.6.1 | 编译时安全，适合复杂状态 |
+| 网络 | dio ^5.7.0 | HTTP 客户端 |
 | 设计语言 | Material 3 + 液态玻璃拟态 | Teal/Emerald 种子色 |
 | 双主题 | Light / Dark | 深浅主题独立调色板 |
 
@@ -62,8 +60,8 @@ lib/
 
 ### 环境要求
 
-- Flutter SDK >= 3.10.0
-- Dart SDK >= 3.0.0
+- Flutter SDK >= 3.27.0
+- Dart SDK >= 3.6.0
 
 ### 安装运行
 
@@ -81,60 +79,12 @@ flutter build apk --release
 
 # iOS
 flutter build ios --release
+
+# 鸿蒙
+flutter build hap --release
 ```
-
-## 功能模块
-
-### M1 插件系统
-- 核心框架 + 内置插件 + 社区插件三层架构
-- 插件独立存储空间，权限声明式授权
-- 插件市场（已安装/社区）
-
-### M2 下载器管理
-- qBittorrent / Transmission 远程控制
-- 种子推送、批量操作、状态监控
-- 多下载器实例切换
-
-### M3 站点管理
-- 多站点聚合管理
-- CookieCloud 一键同步
-- KPI 数据看板（魔力值/上传量/签到率）
-- 登录失效检测
-
-### M4 聚合搜索
-- 跨站点并发搜索
-- 站点状态实时展示
-- 一键推送到下载器
-
-### M5 影视资料与发现
-- 豆瓣/TMDB 影视数据
-- 热门/Trending/Top250/即将上线
-- 详情页一键跳转 PT 搜索
-
-## 设计系统
-
-- **基调**：Material 3 + 液态玻璃拟态
-- **品牌种子色**：Teal/Emerald (`#00B4A0`)
-- **魔力值语义色**：Violet (`#7C5CFC`)
-- **圆角**：卡片 16dp / 按钮全圆 / 底部弹层 28dp
-- **间距**：8pt 基线栅格
-- **字体**：系统字体栈 + 等宽数值字体
-
-## 数据来源
-
-| 数据源 | 协议 | 状态 |
-|--------|------|------|
-| 豆瓣电影 | REST API (frodo) | 可用（反爬需处理） |
-| TMDB | REST API | 推荐（稳定免费） |
-| qBittorrent | Web API | 计划中 |
-| Transmission | JSON-RPC | 计划中 |
-| CookieCloud | REST API | 计划中 |
-
-> 当前版本使用 Mock 数据演示 UI，豆瓣 API 服务层已搭建，可直接替换。
 
 ## 相关文档
 
-- [产品需求文档](../PterPilot_PRD.md)
-- [移动端架构方案](../PterPilot移动端架构方案.md)
-- [需求分析报告](../PterPilot需求分析报告.md)
-- [UI 设计系统](../PterPilot_UI设计系统.md)
+- [插件开发文档](../docs/plugin-development.md)
+- [鸿蒙构建指南](../docs/harmonyos-build-guide.md)

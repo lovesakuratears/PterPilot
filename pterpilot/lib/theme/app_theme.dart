@@ -15,7 +15,7 @@ class AppTheme {
         tertiary: AppColors.magic,
         surface: const Color(0xFFFBFCFC),
         onSurface: AppColors.onSurface,
-        surfaceVariant: const Color(0xFFDEE3E2),
+        surfaceContainerHighest: const Color(0xFFDEE3E2),
         onSurfaceVariant: AppColors.onSurfaceVariant,
         outline: const Color(0xFF6F7978),
         outlineVariant: const Color(0xFFBEC8C7),
@@ -25,7 +25,7 @@ class AppTheme {
 
     return base.copyWith(
       textTheme: _buildTextTheme(Brightness.light),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -103,7 +103,7 @@ class AppTheme {
         tertiary: AppColorsDark.magic,
         surface: const Color(0xFF0E1514),
         onSurface: AppColorsDark.onSurface,
-        surfaceVariant: const Color(0xFF2E3837),
+        surfaceContainerHighest: const Color(0xFF2E3837),
         onSurfaceVariant: AppColorsDark.onSurfaceVariant,
         outline: const Color(0xFF899291),
         outlineVariant: const Color(0xFF3A4544),
@@ -113,7 +113,7 @@ class AppTheme {
 
     return base.copyWith(
       textTheme: _buildTextTheme(Brightness.dark),
-      cardTheme: CardTheme(
+      cardTheme: CardThemeData(
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
